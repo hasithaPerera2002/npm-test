@@ -2,5 +2,5 @@
 
 echo "Hello, this script is running!"
 
-git config --global user.name
-git config --global user.email
+echo "Git user.name: $(git config --global user.name)"
+echo "Git user.email: $(git config --global user.email)"
